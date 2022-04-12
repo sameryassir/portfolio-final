@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Form</title>
+    <script src="https://use.fontawesome.com/5018a7489f.js"></script>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <a class = "skip-to-content-link" href = #main> Skip to Main Content</a>
+    <header>
+        <nav class="form">
+            <ul>
+                <li><a href = "index.html" >About Bakar</a></li>
+                <li><a href = "personal.html">Youth</a></li>
+                <li><a href = "songs.html">Songs</a></li>
+                <li><a href = "modeling.html">Model</a></li>
+                <li class = "current"><a href = "form.html">About You!</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<form action = "https://formspree.io/f/mbjwkogk" method = "POST">
+    <h1>Tell me about yourself!</h1>
+    <br>
+    <section class="name">
+        <label for="name">What is your name?</label>
+              <input type="text" name="name" id="name">
+    </section>
+    <section class = "music-app">
+        <i class="fa fa-spotify" aria-hidden="true"></i>
+        <i class="fa fa-amazon" aria-hidden="true"></i>
+        <label for="music-app">Which music streaming app do you use?</label>
+        <select name="music-app" id="music-app">
+            <option value="applemusic">Apple Music</option>
+            <option value="spotify">Spotify</option>
+            <option value="amazon">Amazon Music</option>
+            <option value="other">Other</option>
+        </select>
+        </section>
+    <section class="app-switch">
+        <label for="yes">Would you ever change streaming platforms?</label><br>
+            <input type="radio" id="yes" name="platform" value="Yes">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="platform" value="No">
+            <label for="no">No</label><br>
+    </section>
+    <section>
+        <label for="complain">Anything you would change about your current platform?</label><br>
+
+        <textarea id="complain" name="complain" rows="4" cols="50">Write here.
+        </textarea>
+    </section>
+    <section class="submission">
+        <input type="submit" value="Submit">
+    </section>
+</form>
+    <h2>Check out some of my favorite Bakar songs!</h2>
+    <p class="playlist"><a href = "https://open.spotify.com/playlist/6SPpedgmNOuQyO7AX8RV6E?si=tNc6WjHvTwS00PNVtEg2dg&nd=1">PLAYLIST</a></p>
+</body>
+</html>
